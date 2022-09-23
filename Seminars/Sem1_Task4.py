@@ -12,7 +12,7 @@ print(a[2])
 
 # a = float(input("Введите число "))
 # b = int(a * 10)
-# result = b % 10 
+# result = b % 10
 # if result == 0:
 #     print('Нет')
 # else:
