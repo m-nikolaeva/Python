@@ -4,19 +4,19 @@ import imp
 import data_provider as prov
 import logger as log
 
-def temperature_view(senson):
+def temperature_view(senson): # метод отображения температуры
     data = prov.get_temperature(senson)
     log.temperature_logger(data)
     return data
 
 
-def pressure_view(senson):
+def pressure_view(senson): # метод отображения давления
     data = prov.get_preassure(senson)
     log.pressure_logger(data)
     return data
 
     
-def wind_speed_view(senson):
+def wind_speed_view(senson): # метод отображения скорости ветра
     data = prov.get_wind_speed(senson)
     log.wind_speed_logger(data)
     return data
