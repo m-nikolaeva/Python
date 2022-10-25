@@ -45,7 +45,7 @@ async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(f'Hello {update.effective_user.first_name}')
 
 
-app = ApplicationBuilder().token("5543787643:AAEndPIPXVUJDWvCLQn-v_AzGQyZrjJTJo8").build()
+app = ApplicationBuilder().token("token").build()
 
 app.add_handler(CommandHandler("hello", hello))
 
